@@ -44,8 +44,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "http://localhost:5173/success", 
-      cancel_url: "http://localhost:5173/cart",    
+      success_url: "https://vestra-ecommerce-alpha.vercel.app/success", 
+      cancel_url: "https://vestra-ecommerce-alpha.vercel.app/cart",    
     });
 res.json({ id: session.id, url: session.url });
   } catch (error) {
