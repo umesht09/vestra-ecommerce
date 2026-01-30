@@ -126,7 +126,7 @@ const ProductPage = () => {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const res = await axios.get("http://localhost:5001/api/products/find/" + id);
+        const res = await axios.get("https://vestra-product-spvq.onrender.com/api/products/find/" + id);
         setProduct(res.data);
       } catch (err) {}
     };

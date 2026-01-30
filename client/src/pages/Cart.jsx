@@ -151,7 +151,7 @@ const Cart = () => {
 
   const makePayment = async () => {
     try {
-      const res = await axios.post("http://localhost:5001/api/create-checkout-session", {
+      const res = await axios.post("https://vestra-order-gkdd.onrender.com/api/create-checkout-session", {
         products: cart.products,
       });
 

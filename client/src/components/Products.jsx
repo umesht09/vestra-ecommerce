@@ -19,8 +19,8 @@ const Products = ({ cat, filters, sort }) => {
     const getProducts = async () => {
       try {
         const url = cat
-          ? `http://localhost:5001/api/products?category=${cat}`
-          : "http://localhost:5001/api/products";
+          ? `https://vestra-product-spvq.onrender.com/api/products?category=${cat}`
+          : "https://vestra-product-spvq.onrender.com/api/products";
           
         const res = await axios.get(url);
         setProducts(res.data);
