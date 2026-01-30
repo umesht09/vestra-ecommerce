@@ -10,7 +10,7 @@ const Stripe = require("stripe");
 dotenv.config();
 
 
-const stripe = Stripe("stripe")(process.env.STRIPE_KEY);
+const stripe = require("stripe")(process.env.STRIPE_KEY); 
 
 mongoose
   .connect(process.env.MONGO_URI)
